@@ -1,16 +1,14 @@
-import { useEffect } from "react";
-import { HealthResponse } from "@server/model/health";
+import { useHealth } from "@api/query";
 
 export const App = () => {
-  const fetchHealth = async () => {
-    const res = await fetch("/api/health");
-    const data: HealthResponse = await res.json();
-    console.log("Health response:", data);
-  };
+  const { data, isPending, isError } = useHealth();
 
-  useEffect(() => {
-    fetchHealth();
-  }, []);
-
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <span>Hello World</span>
+      {isPending && <span>Loading...</span>}
+      {isError && <span>Error fetching health</span>}
+      {data && <span>{JSON.stringify(data, null, 2)}</span>}
+    </div>
+  );
 };

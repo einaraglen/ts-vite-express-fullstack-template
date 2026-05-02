@@ -1,7 +1,8 @@
 import "dotenv/config";
 import cors from "cors";
 import express from "express";
-import { reactRouter } from "./routes/react.js";
+import { reactRouter } from "@routes/react";
+import { HealthResponse } from "@models/health";
 
 const app = express();
 
@@ -15,7 +16,7 @@ app.get("/api/health", (_, res) =>
   res.json({
     status: "OK",
     timestamp: new Date().toISOString(),
-  }),
+  } as HealthResponse),
 );
 
 app.use(reactRouter);

@@ -23,7 +23,8 @@
 
     /* Linking */
     "paths": {
-      "@server/*": ["../server/src/*"]
+      "@server/*": ["../server/src/*"],
+      "@api/*": ["./src/api/*"]
     }
   },
   "include": ["src"]
