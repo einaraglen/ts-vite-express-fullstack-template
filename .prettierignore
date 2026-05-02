@@ -1,8 +1,4 @@
 node_modules
 dist
-client/dist
-client/node_modules
-server/dist
-server/node_modules
 coverage
 artifacts
