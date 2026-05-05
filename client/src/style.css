@@ -3,6 +3,7 @@
 
 * {
   font-family: "Montserrat", sans-serif;
+  font-smooth: auto;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
 }
