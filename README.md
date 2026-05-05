@@ -15,22 +15,22 @@ npm install
 npm run dev
 ```
 
-| Service | URL |
-|---|---|
-| Client | http://localhost:3000 |
-| Server | http://localhost:8080 |
+| Service | URL                   |
+| ------- | --------------------- |
+| Client  | http://localhost:3000 |
+| Server  | http://localhost:8080 |
 
 The client dev server proxies `/api/*` requests to the server automatically.
 
 ## Scripts
 
-| Command | Description |
-|---|---|
-| `npm run dev` | Start client and server in watch mode |
-| `npm run build` | Build for production (outputs to `dist/`) |
-| `npm run start` | Run the production build |
-| `npm run format` | Format all source files with Prettier |
-| `npm run format:check` | Check formatting (for CI) |
+| Command                | Description                               |
+| ---------------------- | ----------------------------------------- |
+| `npm run dev`          | Start client and server in watch mode     |
+| `npm run build`        | Build for production (outputs to `dist/`) |
+| `npm run start`        | Run the production build                  |
+| `npm run format`       | Format all source files with Prettier     |
+| `npm run format:check` | Check formatting (for CI)                 |
 
 ## Project structure
 
