@@ -1,4 +1,4 @@
-import { HealthResponse } from "@server/models/health";
+import { HealthResponse } from "@backend/models/health";
 import { useQuery } from "@tanstack/react-query";
 
 export const useHealth = () => {

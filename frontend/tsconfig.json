@@ -23,7 +23,7 @@
 
     /* Linking */
     "paths": {
-      "@server/*": ["../server/src/*"],
+      "@backend/*": ["../backend/src/*"],
       "@api/*": ["./src/api/*"]
     }
   },
